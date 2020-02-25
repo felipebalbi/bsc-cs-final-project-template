@@ -1,0 +1,17 @@
+*-blx.bib
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fff
+*.lof
+*.lof
+*.log
+*.lot
+*.out
+*.png
+*.pdf
+*.toc
+*.ttt
+*_minted-*
+ltximg/
