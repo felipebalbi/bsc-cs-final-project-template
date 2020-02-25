@@ -1,6 +1,7 @@
 *-blx.bib
 *.aux
 *.bbl
+*.bcf
 *.blg
 *.dvi
 *.fff
@@ -9,9 +10,10 @@
 *.log
 *.lot
 *.out
-*.png
 *.pdf
+*.svg
 *.toc
 *.ttt
 *_minted-*
+/main.run.xml
 ltximg/
