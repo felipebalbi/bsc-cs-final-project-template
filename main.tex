@@ -1,71 +1,7 @@
-%% Variables
-%%
-%% Customize the variables on variables.tex before continuing
-\input{variables}
-
-\documentclass[12pt, twoside]{scrreprt}
-\usepackage[\paperType,
-  width=\paperWidth,
-  top=\marginTop,
-  bottom=\marginBottom,
-  bindingoffset=\bindingOffset]{geometry}
-
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-
-\usepackage[style=alphabetic]{biblatex}
-\addbibresource{references.bib}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
-\fancyhead{}
-\fancyhead[RO,LE]{\projectTitle}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{\projectAuthor}
-
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-
-%% Commands
-\input{commands}
-
-\title{\projectTitle}
-\author{\projectAuthor}
-\date{\projectDate}
+\input{preamble}
 
 \begin{document}
-
-%% Frontmatter
-%%
-%% Change page numbering to lower case roman numerals
-\pagenumbering{roman}
-\input{titlepage}
-\blankpage
-\input{frontmatter/abstract}
-\input{frontmatter/dedication}
-\input{frontmatter/declaration}
-\input{frontmatter/acknowledgements}
-
-\tableofcontents
-\listoffigures
-
-%% Mainmatter
-%%
-%% Change page numbering to arabic numerals
-\pagenumbering{arabic}
-\input{mainmatter/introduction}
-\input{mainmatter/ch02}
-\input{mainmatter/ch03}
-\input{mainmatter/ch04}
-\input{mainmatter/conclusion}
-
-%% Appendix
-\input{backmatter/appendix}
-
-%% Backmatter
-\printbibliography
-
+\input{frontmatter}
+\input{mainmatter}
+\input{backmatter}
 \end{document}

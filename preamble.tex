@@ -1,0 +1,37 @@
+%% Variables
+%%
+%% Customize the variables on variables.tex before continuing
+\input{variables}
+
+\documentclass[12pt, twoside]{scrreprt}
+\usepackage[\paperType,
+  width=\paperWidth,
+  top=\marginTop,
+  bottom=\marginBottom,
+  bindingoffset=\bindingOffset]{geometry}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[style=alphabetic]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[RO,LE]{\projectTitle}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{\projectAuthor}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%% Commands
+\input{commands}
+
+\title{\projectTitle}
+\author{\projectAuthor}
+\date{\projectDate}
