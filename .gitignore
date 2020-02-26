@@ -4,7 +4,9 @@
 *.bcf
 *.blg
 *.dvi
+*.fdb_latexmk
 *.fff
+*.fls
 *.lof
 *.lof
 *.log
