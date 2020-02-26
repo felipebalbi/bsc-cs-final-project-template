@@ -22,6 +22,22 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
+%% Define a \blankpage command that adds an empty page after current
+\def\blankpage {\leavevmode\thispagestyle{empty}\newpage}
+
+%% Environment for a dedication page
+\newenvironment{dedication}
+  {\clearpage            % we want a new page
+   \thispagestyle{empty} % no header and footer
+   \vspace*{\stretch{1}} % some space at the top 
+   \itshape              % the text is in italics
+   \centering            % text is centered
+  }
+  {\par                    % end the paragraph
+   \vspace{\stretch{1}}  % space at bottom is the same as that at the top
+   \clearpage            % finish off the page
+  }
+
 \title{Project Title}
 \author{Author Name}
 \date{12 12 2022}
