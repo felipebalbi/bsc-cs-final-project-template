@@ -1,5 +1,14 @@
+%% Variables
+%%
+%% Customize the variables on variables.tex before continuing
+\input{variables}
+
 \documentclass[12pt, twoside]{report}
-\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[\paperType,
+  width=\paperWidth,
+  top=\marginTop,
+  bottom=\marginBottom,
+  bindingoffset=\bindingOffset]{geometry}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 
@@ -13,19 +22,14 @@
 \pagestyle{fancy}
 
 \fancyhead{}
-\fancyhead[RO,LE]{Thesis Title}
+\fancyhead[RO,LE]{\projectTitle}
 \fancyfoot{}
 \fancyfoot[LE,RO]{\thepage}
 \fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{Felipe Balbi}
+\fancyfoot[CO,RE]{\projectAuthor}
 
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
-
-%% Variables
-%%
-%% Customize the variables on variables.tex before continuing
-\input{variables}
 
 %% Commands
 \input{commands}
