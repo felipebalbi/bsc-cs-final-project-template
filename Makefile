@@ -17,10 +17,13 @@ report:
 clean:
 	$(QUIET_CLEAN) rm -f	\
 		*.aux		\
+		*.bbl		\
 		*.bcf		\
+		*.blg		\
 		*.dvi		\
 		*.lof		\
 		*.log		\
+		*.lot		\
 		*.out		\
 		*.pdf		\
 		*.ps		\
