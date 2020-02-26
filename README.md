@@ -3,7 +3,7 @@
 This is the repository for my BSc CS Final Project.
 
 For anyone who wants to use this repository for their own project
-reports, make sure to change the variables in =variables.tex= to match
+reports, make sure to change the variables in `variables.tex` to match
 your requirements.
 
 ``` tex
