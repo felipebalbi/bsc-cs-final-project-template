@@ -29,7 +29,11 @@
 \begin{document}
 
 %% Frontmatter
+%%
+%% Change page numbering to lower case roman numerals
+\pagenumbering{roman}
 \input{titlepage}
+\blankpage
 \input{frontmatter/abstract}
 \input{frontmatter/dedication}
 \input{frontmatter/declaration}
@@ -40,6 +44,9 @@
 \listoftables
 
 %% Mainmatter
+%%
+%% Change page numbering to arabic numerals
+\pagenumbering{arabic}
 \input{mainmatter/introduction}
 \input{mainmatter/ch02}
 \input{mainmatter/ch03}
