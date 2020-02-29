@@ -3,33 +3,27 @@
 %% Customize the variables on variables.tex before continuing
 \input{variables}
 
-\documentclass[12pt, twoside]{scrreprt}
+\documentclass[12pt, twoside, headsepline, footsepline]{scrreprt}
+
+%% Packages
 \usepackage[\paperType,
   width=\paperWidth,
   top=\marginTop,
   bottom=\marginBottom,
   bindingoffset=\bindingOffset]{geometry}
-
 \usepackage[english]{babel}
-
 \usepackage[style=alphabetic]{biblatex}
+\usepackage{scrlayer-scrpage}
+\usepackage{blindtext} % This should be removed later
+
+\automark[chapter]{chapter}
 \addbibresource{references.bib}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
-\fancyhead{}
-\fancyhead[RO,LE]{\projectTitle}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{\projectAuthor}
+\pagestyle{scrheadings}
+\ifoot{\projectAuthor}
 
 %% Commands
 %%
 %% New and modified commands
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
 
 % \blankpage : adds an empty page after current
 \def\blankpage {
