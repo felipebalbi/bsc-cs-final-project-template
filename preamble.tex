@@ -25,11 +25,37 @@
 \fancyfoot[LO,CE]{Chapter \thechapter}
 \fancyfoot[CO,RE]{\projectAuthor}
 
+%% Commands
+%%
+%% New and modified commands
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
-%% Commands
-\input{commands}
+% \blankpage : adds an empty page after current
+\def\blankpage {
+  \leavevmode
+  \thispagestyle{empty}
+  \newpage
+}
+
+% scrdedication : Environment for a dedication page
+\newenvironment{scrdedication}
+               {
+                 \clearpage            % we want a new page
+                 \thispagestyle{empty} % no header and footer
+                 \vspace*{\stretch{1}} % some space at the top 
+                 \itshape              % the text is in italics
+                 \centering            % text is centered
+               }
+               {
+                 \par                    % end the paragraph
+                 \vspace{\stretch{1}}  % space at bottom is the same as at the top
+                 \clearpage            % finish off the page
+               }
+
+% \fnurl : for url footnotes
+\newcommand\fnurl[2]{\href{#2}{#1}\footnote{\url{#2}}}
+
 
 \title{\projectTitle}
 \author{\projectAuthor}
