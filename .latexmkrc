@@ -5,4 +5,4 @@ $postscript_mode = 0;
 $max_repeat = 10;
 $bibtex = 'pbibtex';
 $biber = 'biber --bblencoding=utf8';
-$latex = 'xelatex -synctex=1 -halt-on-error -interaction=nonstopmode -shell-escape -file-line-error -outdir=. %S';
+$pdflatex = 'xelatex -synctex=1 -halt-on-error -jobname=final-project -interaction=nonstopmode -shell-escape -file-line-error -output-directory=. %S';
