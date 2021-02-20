@@ -15,19 +15,22 @@
 
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage[english]{babel}
-\usepackage[style=alphabetic]{biblatex}
-\usepackage{epstopdf}
 \usepackage{graphicx}
-\usepackage{pgfplots}
+\usepackage{epstopdf}
 \usepackage{scrlayer-scrpage}
 \usepackage{subfiles}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
 \usepackage{tikz}
 
+\usepackage[autostyle]{csquotes}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\addbibresource{references.bib}
 
 \usepackage{lipsum} % This should be removed later
 
 \automark[chapter]{chapter}
-\addbibresource{references.bib}
 \pagestyle{scrheadings}
 \ifoot{\projectAuthor}
 
